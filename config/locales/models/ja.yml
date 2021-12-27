@@ -7,3 +7,7 @@ ja:
         name: "名前"
         age: "年齢"
         role: "権限"
+        roles:
+          owner: "オーナー"
+          member: "メンバー"
+          guest: "ゲスト"

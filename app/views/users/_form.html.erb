@@ -23,7 +23,7 @@
 
   <div>
     <%= form.label :role %>
-    <%= form.select :role, User.roles.keys.map {|k| [k, k]}, {}, { class: 'form-control', style: 'margin-bottom: 15px;', data: {} } %>
+    <%= form.select :role, options_for_select(User.roles.map { |k, _v| [t("activerecord.attributes.user.roles.#{k}"), k] }), { class: 'form-control', style: 'margin-bottom: 15px;', data: {} }  %>
   </div>
 
   <div>
