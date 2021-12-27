@@ -22,6 +22,11 @@
   </div>
 
   <div>
+    <%= form.label :role %>
+    <%= form.select :role, User.roles.keys.map {|k| [k, k]}, {}, { class: 'form-control', style: 'margin-bottom: 15px;', data: {} } %>
+  </div>
+
+  <div>
     <%= form.submit %>
   </div>
 <% end %>
